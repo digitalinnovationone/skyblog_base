@@ -111,12 +111,14 @@ export default function Home() {
     },
   ];
 
-  function handleNewNews() {
+  function handleNewNews() {}
+
+  function handleNews() {
     setNews(mockNews);
   }
 
   useEffect(() => {
-    handleNewNews();
+    handleNews();
     localStorage.setItem("news", JSON.stringify(mockNews));
   }, []);
 
